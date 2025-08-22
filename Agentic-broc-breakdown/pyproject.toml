@@ -1,0 +1,26 @@
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "Brochure-analyzer"
+version = "0.1.0"
+description = "A wrapper to extract specific data from real estate brochures"
+readme = "README.md"
+requires-python = ">=3.8"
+
+dependencies = [
+    "requests>=2.28",
+    "pandas>=1.5",
+    "agentic-doc",
+    "PyMuPDF",
+    "pdfplumber",
+    "pdf2image",
+    "pydantic",
+    "google-genai",
+]
+
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "Operating System :: OS Independent",
+]
